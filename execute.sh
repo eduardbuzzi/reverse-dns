@@ -2,6 +2,7 @@
 principal () {
 echo
 read -p "DOMAIN => " DOMAIN
+echo
 if [ -z $DOMAIN ]
 then
 principal
