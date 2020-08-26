@@ -7,7 +7,6 @@ if [ -z $DOMAIN ]
 then
 principal
 fi
-RANDOM=$(shuf -i 1-1000 -n1)
 IP=$(host $DOMAIN | cut -d ' ' -f4 | head -n1)
 echo "$IP" > /tmp/111
 if [ "$IP" = "found:" ]
